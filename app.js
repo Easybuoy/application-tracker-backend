@@ -1,5 +1,6 @@
 const express = require('express');
 
+require('./config/db');
 const authRoutes = require('./routes/auth');
 
 const app = express();
@@ -7,7 +8,10 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.json({ status: 'success', message: 'Welcome to Application Tracker API 👋🏾' });
+  res.json({
+    status: 'success',
+    message: 'Welcome to Application Tracker API 👋🏾'
+  });
 });
 
 app.use('/api/v1/auth', authRoutes);
