@@ -1,0 +1,29 @@
+{
+  "name": "application-tracker-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Easybuoy/application-tracker-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Easybuoy/application-tracker-backend/issues"
+  },
+  "homepage": "https://github.com/Easybuoy/application-tracker-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
